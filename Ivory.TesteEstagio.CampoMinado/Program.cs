@@ -139,7 +139,14 @@ namespace Ivory.TesteEstagio.CampoMinado
                 Console.WriteLine($"\nJogada: {decifrar.NivelIteracao()}\n{campoMinado.Tabuleiro}");
             }
 
-            Console.WriteLine($"\nStatus do jogo: {campoMinado.JogoStatus}");
+            if (campoMinado.JogoStatus == 1)
+            {
+                Console.WriteLine($"\nStatus do jogo: {campoMinado.JogoStatus} (Vitória)");
+            }
+            else if (campoMinado.JogoStatus == 1)
+            {
+                Console.WriteLine($"\nStatus do jogo: {campoMinado.JogoStatus} (Game Over)");
+            }
         }
     }
 }
