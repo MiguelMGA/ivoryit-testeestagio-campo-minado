@@ -143,7 +143,7 @@ namespace Ivory.TesteEstagio.CampoMinado
             {
                 Console.WriteLine($"\nStatus do jogo: {campoMinado.JogoStatus} (Vitória)");
             }
-            else if (campoMinado.JogoStatus == 1)
+            else if (campoMinado.JogoStatus == 2)
             {
                 Console.WriteLine($"\nStatus do jogo: {campoMinado.JogoStatus} (Game Over)");
             }
